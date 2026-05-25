@@ -1,0 +1,30 @@
+[
+  {
+    "name": "threatintelligencenews",
+    "scriptFile": "ThreatIntelligenceNewsFunction.dll",
+    "entryPoint": "ThreatIntelligenceNewsFunction.Functions.ThreatIntelligenceNewsFunction.Run",
+    "language": "dotnet-isolated",
+    "properties": {
+      "IsCodeless": false
+    },
+    "bindings": [
+      {
+        "name": "request",
+        "direction": "In",
+        "type": "httpTrigger",
+        "authLevel": "Function",
+        "methods": [
+          "get",
+          "post"
+        ],
+        "route": "threatintelligencenews",
+        "properties": {}
+      },
+      {
+        "name": "$return",
+        "type": "http",
+        "direction": "Out"
+      }
+    ]
+  }
+]

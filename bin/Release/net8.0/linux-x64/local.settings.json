@@ -1,0 +1,21 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated"
+  },
+  "CyberSecurityNewsFeeds": [
+    {
+      "Name": "KrebsOnSecurity",
+      "Url": "https://krebsonsecurity.com/feed/"
+    },
+    {
+      "Name": "The Hacker News",
+      "Url": "https://feeds.feedburner.com/TheHackersNews"
+    },
+    {
+      "Name": "BleepingComputer",
+      "Url": "https://www.bleepingcomputer.com/feed/"
+    }
+  ]
+}

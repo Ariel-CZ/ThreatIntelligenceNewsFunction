@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ThreatIntelligenceNewsFunction": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7071"
+    }
+  }
+}
