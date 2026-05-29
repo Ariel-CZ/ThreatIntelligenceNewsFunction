@@ -1,0 +1,22 @@
+name: Deploy to Azure Function
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 8.0.x
+      - name: Publish
+        run: dotnet publish --configuration Release --output ./output
+      - name: Deploy to Azure
+        uses: Azure/functions-action@v1
+        with:
+          app-name: 'api-threat-linux-acz'
+          publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }}
+          package: ./output
