@@ -25,5 +25,4 @@ jobs:
           app-name: 'api-threat-linux-acz'
           publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }}
           package: ./output
-          # Esta configuración es clave para evitar errores de despliegue en Linux
           respect-pom-xml: false
