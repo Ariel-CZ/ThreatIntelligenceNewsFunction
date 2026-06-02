@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:  # <--- Esta es la línea que dispara el Job
 
 jobs:
   build-and-deploy:
